@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Requests</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .left-panel, .right-panel {
+            flex: 1;
+            margin: 20px;
+        }
+        .right-panel {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        .right-panel button, .left-panel button {
+            margin: 10px 0;
+            padding: 10px 20px;
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .left-panel {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .left-panel label, .left-panel input {
+            margin: 5px 0;
+        }
+        .left-panel input {
+            padding: 5px;
+            width: 200px;
+        }
+        .left-panel button {
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function loadSubmitPurchaseRequest() {
+            window.location.href = 'submit-purchase-request.html';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <label for="purchase-request">Purchase request</label>
+            <input type="text" id="purchase-request" name="purchase-request">
+            <label for="purchase-order">Purchase Order</label>
+            <input type="text" id="purchase-order" name="purchase-order">
+            <label for="submitted-by">Submitted by</label>
+            <input type="text" id="submitted-by" name="submitted-by">
+            <button>Search</button>
+        </div>
+        <div class="right-panel">
+            <button onclick="loadSubmitPurchaseRequest()">Submit Purchase Request</button>
+            <button>Submit Catalog Order</button>
+            <button>Submit Internal Order</button>
+        </div>
+    </div>
+</body>
+</html>

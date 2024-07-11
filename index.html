@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Procurement</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="site-title">Green Procurement</h1>
+        </header>
+        
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Pre-approvals</a>
+                    <ul class="submenu">
+                        <li><a href="#" onclick="loadPage('pages/baf.html')">BAF</a></li>
+                        <li><a href="#" onclick="loadPage('pages/crf.html')">CRF</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Procurement</a>
+                    <ul class="submenu">
+                        <li><a href="#" onclick="loadPage('pages/sourcing.html')">Sourcing</a></li>
+                        <li><a href="#" onclick="loadPage('pages/purchase-requests.html')">Purchase requests</a></li>
+                        <li><a href="#" onclick="loadPage('pages/purchase-orders.html')">Purchase Orders</a></li>
+                        <li><a href="#" onclick="loadPage('pages/grn.html')">GRN</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Supplier Glossary</a>
+                    <ul class="submenu">
+                        <li><a href="#" onclick="loadPage('pages/supplier-database.html')">Supplier database</a></li>
+                        <li><a href="#" onclick="loadPage('pages/search-by-commodity.html')">Search by Commodity</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Contracts Management</a>
+                    <ul class="submenu">
+                        <li><a href="#" onclick="loadPage('pages/msa.html')">MSA</a></li>
+                        <li><a href="#" onclick="loadPage('pages/sows.html')">SOW's</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Analytics and Reports</a>
+                    <ul class="submenu">
+                        <li><a href="#" onclick="loadPage('pages/pizza-graph.html')">Pizza type graph</a></li>
+                        <li><a href="#" onclick="loadPage('pages/random-numbers.html')">Random numbers</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Training and Support</a></li>
+            </ul>
+        </nav>
+
+        <div class="iframe-container">
+            <iframe id="content-frame" src="about:blank" frameborder="0" scrolling="auto"></iframe>
+        </div>
+
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
